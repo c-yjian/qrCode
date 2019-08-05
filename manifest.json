@@ -1,0 +1,60 @@
+{
+  "name": "page qrCode",
+  "version": "0.1",
+  "description": "page qrCode",
+  "icons": {
+    "16": "qrCode.png",
+    "32": "qrCode.png",
+    "48": "qrCode.png",
+    "128": "qrCode.png"
+  },
+  "browser_action": {
+    "default_icon": "qrCode.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.163.com/*",
+        "https://*.163.com/*",
+        "http://*.netease.com/*",
+        "https://*.netease.com/*",
+        "https://*.126.net/*",
+        "http://*.126.net/*",
+        "https://*.immortalconquest.com/*",
+        "http://*.immortalconquest.com/*",
+        "https://*.onmyojigame.com/*",
+        "http://*.onmyojigame.com/*",
+        "https://*.onmyojigame.jp/*",
+        "http://*.onmyojigame.jp/*",
+        "https://*.baidu.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "commands": {
+    "toggle-tags": {
+      "suggested_key": {
+        "default": "Alt+S",
+        "mac": "MacCtrl+S"
+      },
+      "description": "Toggle Tags"
+    }
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "*://*/*",
+    "webRequest",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "manifest_version": 2
+}

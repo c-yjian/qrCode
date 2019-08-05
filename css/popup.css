@@ -1,0 +1,27 @@
+.fl{
+    float: left;
+}
+.container{
+    width: 360px;
+    height: 320px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.wrap{
+    overflow: hidden;
+    margin: 5px 0;
+}
+.container .des{
+    width: 35px;
+}
+.container .content{
+    width: 300px;
+    overflow: hidden;
+    white-space: nowrap;/*不换行*/
+    text-overflow:ellipsis;/*超出部分文字以...显示*/
+}
+.cur-page{
+    margin-top: 10px;
+}
+

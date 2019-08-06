@@ -1,4 +1,4 @@
-#web qrCode chrome 插件
+# web qrCode chrome 插件
 可将当前页面的url地址制成二维码，这样手机直接扫描二维码即可访问pc端的当前页面
 主要是用来做移动端开发的一个工具
 
